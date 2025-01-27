@@ -1,0 +1,15 @@
+Tech Journal Lab 2-1
+Roman Davids
+
+Using CISCO software (packet tracer)
+
+ping (ip) = wait for 4 responses
+
+How do you deploy workstations and switches in Packet Tracer?
+By clicking on the bottom left, selecting which compnent I need, and then putting them in the white box.
+
+How do connect these devices with cables?
+You click on your PC, select which 'port' you want, and then connect it to a switch or whatever else.
+
+How do you access the command-line terminal on a Packet Tracer PC?
+You click on the PC, go to desktop, and then select command line. 
