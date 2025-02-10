@@ -1,0 +1,11 @@
+RD.
+Tech J. 4-1, Feb. 10th.
+
+
+
+Usage of CLI on Switch.
+
+show mac-address table = shows mac addresses.
+type enable if switch>.
+Ensure that IP addresses do not conflict with one another. Subnet masking for lab was 255.255.255.0, all PCs connected to a switch. 
+MAC addresses will appear after you ping another computer with (ping) command.
