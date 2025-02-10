@@ -1,0 +1,18 @@
+TJ for Lab 4-2
+RD
+
+assigning computers ip/subnet mask via config/ip config.
+
+a subnet mask is a "32-bit address that segregates an IP address into network bits that identify the network and host bits that identify the host device operating on that network"
+
+a Default Gateway is a router that allows devices to access other networks, i.e. internet, when there's no other route specified
+Ensure multiplayer switch has IP configs. 
+
+How do you set the gateway address on a workstation in Packet Tracer?
+go to ip config under desktop.
+How do you set the IP and subnet mask on different interfaces of a multilayer switch?
+ensure that they align with the PCs IP addresses along with subnet masks - on the different and appropriate/proper ethernet connections. 
+How do you enter simulation mode in Packet Tracer?
+By pressing simulation in the bottom right.
+How do you set which types of packets you want to see in Simulation Mode?
+By clicking 'edit filters' and choosing which packets you wish to see. 
