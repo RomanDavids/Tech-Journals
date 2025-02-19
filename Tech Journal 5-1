@@ -1,0 +1,10 @@
+Roman TJ 5-1
+
+
+How did you connect to a router?
+We connected to a router by hooking up with an ethernet cable and configuring the IP addresses cia CLI. 
+enable, configure terminal, interface ______, ip address xxx.xxx.x.x 255.255.255.0.
+Make sure computers are on proper gateways. 
+
+Sniffer prevent traffic from flowing, unsure how to fix. 
+Furthest right on routers and switches is frequently 0/0 and going left increases by one. 
