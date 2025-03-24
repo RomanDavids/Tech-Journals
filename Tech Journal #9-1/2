@@ -19,3 +19,33 @@ R3(config)# ip route 192.168.10.0 255.255.255.0 10.10.10.1
 R3(config)# ip route 192.168.20.0 255.255.255.0 10.10.10.1
 R3(config)# ip route 192.168.30.0 255.255.255.0 10.10.10.1
  
+
+
+FOR LAB 9-2:
+
+Static routing was configured on both the West and East edge routers to allow communication between multiple subnets. The West Router was responsible for the SalesWest and FinanceWest networks, while the East Router handled SalesEast and FinanceEast 
+Static routes were manually added to each router to define paths to remote subnets. The commands used specified the destination network, subnet mask, and the next-hop IP address (the serial interface of the opposite router).
+
+ip route 154.103.40.0 255.255.252.0 192.168.0.2
+ip route 154.103.16.0 255.255.240.0 192.168.0.1
+
+
+During pingings, an initial issue was discovered where SalesWest1 PC could ping its own default gateway but could not reach SalesEast1 PC, resulting in a "Request Timed Out" error.
+
+Troubleshooting Steps Taken:
+Verified PC IP configuration: Ensured correct subnet mask and default gateway were set on the PCs.
+
+Checked router interfaces: Used show ip interface brief to confirm all interfaces were up and configured.
+
+Tested connectivity step-by-step:
+
+Pinged the local router from the PC (success).
+
+Pinged across the serial link from West Router to East Router (success).
+
+Pinged SalesEast1 from the West Router (success).
+
+Reviewed static routes: Found missing or incorrect static routes and re-entered them with correct network addresses and subnet masks.
+
+Re-tested pings: Once static routes were fixed, end-to-end pings succeeded.
+The issue was resolved by correcting the static routes on both routers, ensuring the routers knew how to reach the remote subnets. After the fix, full communication between SalesWest1 and SalesEast1 was established, along with FinanceWest to FinanceEast.
