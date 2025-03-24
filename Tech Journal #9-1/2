@@ -1,0 +1,21 @@
+Create entry for configuring static routes so that you can use it as a reference for future labs.
+
+
+R1(config)#ip route 192.168.30.0 255.255.255.0 10.10.20.2
+
+ R1(config)#ip route 192.168.10.0 255.255.255.0 10.10.10.2
+
+ - - - 
+
+ R2(config)#ip route 192.168.10.0 255.255.255.0 10.10.20.1
+
+ R2(config)#ip route 10.10.10.0 255.255.255.0 10.10.20.1
+
+ R2(config)#ip route 192.168.20.0 255.255.255.0 10.10.20.1
+
+- - -
+
+R3(config)# ip route 192.168.10.0 255.255.255.0 10.10.10.1
+R3(config)# ip route 192.168.20.0 255.255.255.0 10.10.10.1
+R3(config)# ip route 192.168.30.0 255.255.255.0 10.10.10.1
+ 
